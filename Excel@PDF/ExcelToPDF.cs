@@ -36,7 +36,7 @@ namespace Excel_PDF
             }));
         }
 
-        public async Task SaveFile(string filename)
+        public async void SaveFile(string filename)
         {
             List<Stream> streams = new List<Stream>();
             for (int i = 0; i < this.Workbook.Worksheets.Count; i++)
